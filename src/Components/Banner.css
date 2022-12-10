@@ -1,0 +1,530 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 480px) {
+    .header {
+        height: auto !important;
+    }
+
+    .sajib {
+        background: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .header {
+        height: auto !important;
+    }
+
+    .sajib {
+        background: none;
+    }
+
+    .main img {
+        width: auto !important;
+        width: 300px;
+
+    }
+
+
+}
+
+@media(min-width: 900px) {
+    .main img {
+        width: 350px;
+        width: 300px;
+
+
+    }
+
+    .header {
+        height: 100vh !important;
+    }
+
+    .sajib {
+        background: #f9ca24;
+    }
+}
+
+
+
+
+.navbar a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white !important;
+    transition: 0.5s;
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+.navbar a:hover {
+    background: #f9ca24;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: black !important;
+
+
+}
+
+.banner-container {
+    margin-top: 180px;
+
+}
+
+.navbar-brand {
+    background: #f9ca24;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*header area end*/
+
+
+/*main area start*/
+.main {
+    /*    background: #f7f7f9;*/
+    /*    background: linear-gradient(30deg, #fff 0%, #16c9f6 100%);*/
+    background: linear-gradient(40deg, #f7f7f9 85%, #f9ca24 5%);
+
+}
+
+.main p {
+    color: #FFFFFF rgba(255, 255, 255);
+    opacity: 0.8;
+
+}
+
+
+.service-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    background: #f7f7f9;
+    transition: .8s;
+}
+
+.service-box .box1 {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.service-box .box1:hover {
+    transform: translateY(-20px);
+}
+
+.service-box .box:hover {
+    background: black;
+    color: white;
+    transition: .8s;
+    border-radius: 5px;
+    transform: translateY(-20px);
+}
+
+.service-box .box p {
+    opacity: 0.6;
+
+}
+
+/*freelancer start*/
+.form {
+
+    background: linear-gradient(30deg, #576574 80%, #f9ca24 10%);
+
+
+
+    color: black;
+}
+
+
+/*freelancer end*/
+
+/*my work start*/
+
+
+
+
+.my-work {
+    text-align: center;
+    padding: 32px;
+
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*my work end*/
+
+/*coundown start*/
+
+.counter-up {
+
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    /*    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);*/
+    background-size: cover;
+
+    position: relative;
+
+}
+
+.counter-up::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*    background: rgba(0, 0, 0, 0.8);*/
+}
+
+.counter-up .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.content .box {
+    width: calc(25% - 30px);
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: .6s;
+
+
+}
+
+.content .box:hover {
+    background: #f9ca24;
+    transition: .6s;
+    color: white;
+}
+
+.content .box .icon {
+    font-size: 48px;
+    color: black;
+}
+
+.content .box .counter {
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.content .box .text {
+    color: black;
+    font-weight: 400;
+}
+
+@media (max-width: 1036px) {
+    .counter-up {
+        padding: 50px 50px 0 50px;
+    }
+
+    .content .box {
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content .box {
+        width: 100%;
+
+
+    }
+}
+
+
+/*coundown end*/
+
+
+
+/* PRCICING START*/
+
+
+.pricing {
+    width: 100%;
+    height: auto;
+    /*    height: auto;*/
+    padding: 50px;
+    position: relative;
+    /*    margin-top: 10px;*/
+}
+
+.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /*    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);*/
+    background: linear-gradient(25deg, #f9ca24 50%, #f7f7f9 10%);
+
+
+}
+
+.money {
+    font-size: 48px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff !important;
+    padding: 25px 9 !important;
+}
+
+.card-body {
+    padding: 30px 0px;
+
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer {
+    background: white !important;
+    padding: 30px 0px !important;
+}
+
+.card-footer a {
+    border: 1px solid #f9ca24;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #f9ca24;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+
+
+}
+
+.card:hover .card-footer a {
+    color: black;
+    background: #f9ca24;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.card:hover {
+
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    /*    color: #50d1c0;*/
+    color: #f9ca24;
+}
+
+.second {
+    transform: translateY(-20px);
+
+
+
+}
+
+
+
+
+/* PRCICING END*/
+
+/*contact me start*/
+
+.contactme {
+    width: 100%;
+    /*    height: 100vh;*/
+    height: auto;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(30deg, #fff 50%, #f9ca24 10%);
+    z-index: -1;
+}
+
+.form-button button {
+    border: 1px solid #f9ca24;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    background: #f9ca24;
+}
+
+
+
+
+
+::placeholder {
+    font-size: 0.85rem;
+
+
+}
+
+
+
+/*contact me end*/
+
+
+
+
+
+
+
+
+/*main area end*/
+
+.footer-section {
+    width: 100%;
+    /*    height: 100vh;*/
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: black;
+    position: relative;
+
+}
+
+.footer-section p {
+    color: #fff;
+}
+
+.footer-section li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
