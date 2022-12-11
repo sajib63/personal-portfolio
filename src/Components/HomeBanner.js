@@ -1,9 +1,11 @@
 import React from "react";
 import Countdown from "react-countdown";
-import { FaMobile } from "react-icons/fa";
+import { FaComment, FaMobile } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { useTypewriter } from "react-simple-typewriter";
 
 import "./Banner.css";
+import CustomerSlide from "./CustomerSlide";
 
 const HomeBanner = () => {
   const [text] = useTypewriter({
@@ -79,153 +81,260 @@ const HomeBanner = () => {
 
       {/* my services  */}
 
-      <section class="service my-10">
+      <section class="service my-4">
         <div class="text-center">
-          <h1 class="text-3xl font-bold " style={{ color: "#fcb900" }}>My services</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem{" "}
+          <h1 class="text-4xl font-bold " style={{ color: "#fcb900" }}>
+            My services
+          </h1>
+          <p className="mt-3">
+            MERN stands for MongoDB, ExpressJS, React, and Node. <br /> MERN is
+            a Web development stack for building full stack Web applications.
           </p>
         </div>
+
         <div class="service-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-4">
-              
-        <div class="col-12 col-md-4 col-lg-4 mb-5">
-                <div class="box1">
-                  <span>
-                    <center>
-                      <i
-                        class="bi bi-brush-fill"
-                        style={{border:' 1px solid #f9ca24', padding:'15px', background:'#f9ca24',
-                        borderRadius: '5px'}}></i>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Graphic Design</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-4 mb-5">
-                <div class="box">
-                  <span>
-                    <center>
-                      <i
-                        class="bi bi-webcam"
-                        style={{border:' 1px solid #f9ca24', padding:'15px', background:'#f9ca24',
-                        borderRadius: '5px'}}           ></i>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Web Design</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
-              <div class="shadow-2xl mb-5">
-                <div class="box">
-                  <span className="-mt-4">
-                    <center>
-                    <FaMobile className="text-6xl" style={{ color: "#fcb900" }}></FaMobile>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Web Devolopment</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
+          <div class=" mb-5" data-aos="flip-left">
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-2xl">
+                MERN Stack Development
+              </h4>
+              <p class="text-center mt-4">
+                MERN stack is a collection of technologies that enables faster
+                application development.
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
 
-              <div class="col-12 col-md-4 col-lg-4 mb-5">
-                <div class="box">
-                  <span>
-                    <center>
-                      <i
-                        class="bi bi-film"
-                        style={{border:' 1px solid #f9ca24', padding:'15px', background:'#f9ca24',
-                        borderRadius: '5px'}}
-                      ></i>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Media Opereting</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
+          <div class=" mb-5" data-aos="fade-left">
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-2xl">
+                Front-end Development
+              </h4>
+              <p class="text-center mt-4">
+                Front-end web development, also known as client-side development
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
 
-              <div class="col-12 col-md-4 col-lg-4 mb-5">
-                <div class="box">
-                  <span>
-                    <center>
-                      <i
-                        class="bi bi-collection-play-fill"
-                        style={{border:' 1px solid #f9ca24', padding:'15px', background:'#f9ca24',
-                         borderRadius: '5px'}}
-                      ></i>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Video Editing</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-4 mb-5">
-                <div class="box">
-                  <span>
-                    <center>
-                      <i
-                        class="bi bi-sim-fill"
-                        style={{border:' 1px solid #f9ca24', padding:'15px', background:'#f9ca24',
-                        borderRadius: '5px'}}
-                      ></i>
-                    </center>
-                  </span>
-                  <h4 class="mt-5 text-center">Data Entry</h4>
-                  <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus, dolorum Minus,{" "}
-                  </p>
+          <div class=" mb-5" data-aos="fade-left">
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-2xl">
+                Back-end Development
+              </h4>
+              <p class="text-center mt-4">
+                Back-end development means working on server-side. which focuses
+                on everything.
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
 
-                  <center>
-                    <button class="btn btn-outline-warning mb-5 mt-2">
-                      Visit Me
-                    </button>
-                  </center>
-                </div>
-              </div>
+          <div class=" mb-5" data-aos="fade-up-right">
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-2xl">Bug Solving</h4>
+              <p class="text-center mt-4">
+                A bug fix is a change to a system or product designed to handle
+                a programming bug/glitch.
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
 
+          <div class=" mb-5" data-aos="fade-left">
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-2xl">Web Design</h4>
+              <p class="text-center mt-4">
+                Web design refers to the design of websites that are displayed
+                on the internet.
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
+
+          <div
+            class=" mb-5"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="box">
+              <span className="-mt-4">
+                <FaComment
+                  className=""
+                  style={{ color: "#fcb900" }}
+                ></FaComment>
+              </span>
+              <h4 class="mt-5 text-center text-sm md:text-3xl">
+                Web Development
+              </h4>
+              <p class="text-center mt-4">
+                Web developers create and maintain websites. They are also
+                responsible for the site's.
+              </p>
+              <center>
+                <button class="btn btn-outline border-yellow-400 hover:bg-yellow-400 hover:border-0 my-10 visit-button">
+                  Order Now
+                </button>
+              </center>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* pricing start  */}
+
+      <div class=" mb-5">
+        <section class="pricing" id="pricingdiv">
+          <div class="container headings text-center -mt-10">
+            <h1 class="text-center font-weight-bold text-warning my-16 text-4xl">
+              MY PRICING
+            </h1>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              class="col-lg-4 col-12 mb-5  "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <div class="card text-center ">
+                <div class="card-header">BASIC</div>
+                <div class="card-body">
+                  <li>
+                    $ <span class="money">50</span>Websites
+                  </li>
+                  <li>Responsive Websites</li>
+                  <li>Domain Name Free</li>
+                  <li>Mobile Friendly</li>
+                  <li>Webmail Support</li>
+                  <li>Customer Support</li>
+                </div>
+
+                <div class="card-footer">
+                  <Link to="">Order Now</Link>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-12 second "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <div class="card text-center">
+                <div class="card-header">STANDRD</div>
+                <div class="card-body">
+                  <li>
+                    $ <span class="money">80</span>Websites
+                  </li>
+                  <li>Responsive Websites</li>
+                  <li>Domain Name Free</li>
+                  <li>Mobile Friendly</li>
+                  <li>Webmail Support</li>
+                  <li>Customer Support</li>
+                </div>
+
+                <div class="card-footer">
+                  <Link to="">Order Now</Link>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-12 "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <div class="card text-center">
+                <div class="card-header">UNLIMITED</div>
+                <div class="card-body">
+                  <li>
+                    $ <span class="money">120</span>Websites
+                  </li>
+                  <li>Responsive Websites</li>
+                  <li>Domain Name Free</li>
+                  <li>Mobile Friendly</li>
+                  <li>Webmail Support</li>
+                  <li>Customer Support</li>
+                </div>
+
+                <div class="card-footer">
+                  <Link to="">Order Now</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* customer slide  */}
+
+      <div>
+      <div class="container headings text-center " data-aos="fade-up-left">
+            <h1 class="text-center font-weight-bold text-warning  text-4xl">
+              Happy Client's
+            </h1>
+          </div>
+
+          <CustomerSlide></CustomerSlide>
+        </div>
+
+        
     </div>
   );
 };

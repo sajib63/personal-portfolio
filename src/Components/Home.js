@@ -7,7 +7,7 @@ const Home = () => {
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         <div
-          className=" w-full lg:w-2/5 bg-zinc-800 rounded-sm"
+          className=" w-full lg:w-2/5 bg-zinc-800 rounded-sm "
           data-aos="fade-up"
         >
           <FirstSideNav></FirstSideNav>

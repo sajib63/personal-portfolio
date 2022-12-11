@@ -24,10 +24,10 @@ const FirstSideNav = () => {
 
 
   return (
-    <div className="  text-white w-full">
+    <div className="  text-white w-full lg:sticky lg:top-16 ">
       {/* avatar img  */}
 
-      <div className="justify-center p-4 sticky top-16 md:top-16 lg:z-50 bg-zinc-700  items-center text-center  text-white">
+      <div className="justify-center p-4 sticky top-16 md:top-14 lg:z-50 bg-zinc-700  items-center text-center  text-white">
         <div className="justify-center flex items-center text-center mb-2 ">
           <img
             label="sajib"

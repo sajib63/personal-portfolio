@@ -5,7 +5,7 @@ const Navbar = () => {
   const navItems = (
     <>
       <li className="text-white font-semibold">
-        <Link>Home</Link>
+        <Link to='/'>Home</Link>
       </li>
       <li className="text-white font-semibold">
         <Link>About</Link>
@@ -14,12 +14,12 @@ const Navbar = () => {
         <Link>Blog</Link>
       </li>
       <li className="text-white font-semibold">
-        <Link>Contact</Link>
+        <Link to='/contact'>Contact</Link>
       </li>
     </>
   );
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 bg-zinc-900">
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
