@@ -10,7 +10,7 @@ const Navbar = () => {
       <li className="text-white font-semibold">
         <Link>About</Link>
       </li>
-      <li className="text-white font-semibold">
+      <li className="text-white font-semibold ">
         <Link>Blog</Link>
       </li>
       <li className="text-white font-semibold">
@@ -46,7 +46,7 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <Link className=" normal-case text-sm lg:text-2xl font-bold text-white">
+          <Link className=" normal-case text-sm lg:text-2xl font-bold text-warning">
             Sajib-Ahmed
           </Link>
         </div>

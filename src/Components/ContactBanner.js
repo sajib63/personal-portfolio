@@ -1,6 +1,6 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
-import ContactForm from "./ContactForm";
+
 
 const ContactBanner = () => {
   const [text] = useTypewriter({

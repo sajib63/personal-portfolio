@@ -1,8 +1,8 @@
 import React from 'react';
-import ContactBanner from './ContactBanner';
+
 import ContactForm from './ContactForm';
 import FirstSideNav from './FirstSideNav';
-import HomeBanner from './HomeBanner';
+
 
 const Content = () => {
     return (
@@ -15,8 +15,8 @@ const Content = () => {
             <FirstSideNav></FirstSideNav>
           </div>
   
-          <div data-aos="fade-down" className=" lg:-ml-[300px]">
-            <ContactBanner></ContactBanner>
+          <div data-aos="fade-down" className=" lg:-ml-[300px] p-4">
+            
             <ContactForm></ContactForm>
           </div>
         </div>

@@ -63,7 +63,7 @@ const FirstSideNav = () => {
       <div data-aos="fade-up-right" className="p-4">
         <h1 className="text-sm md:text-lg p-2 font-bold">Language</h1>
         <div className="flex justify-center gap-8 mt-3">
-          <p className="text-center">
+          <p className="text-center text-lg md:text-sm">
             <CircularProgressbar
               value={Bangla}
               text={`${Bangla}%`}
@@ -75,7 +75,7 @@ const FirstSideNav = () => {
             />
             <p className="mt-2">Bangla</p>
           </p>
-          <p className="text-center">
+          <p className="text-center text-lg md:text-sm">
             <CircularProgressbar
               value={English}
               text={`${English}%`}
@@ -86,7 +86,7 @@ const FirstSideNav = () => {
             />
             <p className="mt-2">English</p>
           </p>
-          <p className="text-center">
+          <p className="text-center text-lg md:text-sm">
             <CircularProgressbar
               value={Hindi}
               text={`${Hindi}%`}
