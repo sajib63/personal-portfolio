@@ -1,4 +1,3 @@
-
 import { Line } from "rc-progress";
 import React from "react";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
@@ -13,21 +12,14 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-
 const FirstSideNav = () => {
-  
-
   const Bangla = 100;
   const English = 90;
   const Hindi = 80;
 
-
-
   return (
     <div className="  text-white w-full lg:sticky lg:top-16 ">
-      {/* avatar img  */}
-
-      <div className="justify-center p-4 sticky top-16 md:top-14 lg:z-50 bg-zinc-700  items-center text-center  text-white">
+      <div className="justify-center p-4 md:sticky top-16 md:top-14 lg:z-50 bg-zinc-700  items-center text-center  text-white">
         <div className="justify-center flex items-center text-center mb-2 ">
           <img
             label="sajib"
@@ -36,12 +28,8 @@ const FirstSideNav = () => {
             src="https://i.ibb.co/L88jG5n/photostudio-2-designify.png"
           />
         </div>
-        <p className="font-semibold text-sm md:text-xl">
-    Sajib Ahmed
-        </p>
-        <p className="font-semibold text-sm md:text-xl">
-      MERN Stack Developer
-        </p>
+        <p className="font-semibold text-sm md:text-xl">Sajib Ahmed</p>
+        <p className="font-semibold text-sm md:text-xl">MERN Stack Developer</p>
       </div>
 
       <div data-aos="fade-right" className="my-4 text-white font-semibold p-5">
@@ -208,7 +196,7 @@ const FirstSideNav = () => {
         </a>
       </div>
 
-      <div className="bg-zinc-700 shadow-lg flex gap-3 mt-2 justify-center items-center text-center text-2xl p-2">
+      <div className="bg-zinc-700 shadow-lg flex sticky bottom-0 gap-3 mt-2 justify-center items-center text-center text-2xl p-2">
         <a
           target="_blank"
           href="https://www.facebook.com/sj.khan.9634"
@@ -238,7 +226,6 @@ const FirstSideNav = () => {
           href="https://github.com/sajib63"
           className="text-zinc-400  hover:text-white "
         >
-          {" "}
           <FaGithub></FaGithub>
         </a>
       </div>

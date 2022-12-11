@@ -1,0 +1,49 @@
+[
+    
+    {
+      "details": "This is a Quiz Website ",
+      "id":1,
+      "details2": "I made this website for QNA",
+      "details3": "It's made by React-Js",
+      "details4": "Ki-twind Toastify Reachart",
+      "technology": "HTML CSS, JAVASCRIPT, REACTJS, Tailwind",
+      "picture": "https://i.ibb.co/QHQLrWN/quize-mart.png",
+      "name": "Quiz Mart",
+      "liveLink": "https://admirable-khapse-95a4b4.netlify.app/"
+    },
+
+    {
+      "details": "E-learning platform",
+      "id":2,
+      "details2": "where different types of courses are offered.",
+      "details3": "Private Route to secure the course details.",
+      "details4": "Fully Responsive WEBSITE",
+      "technology": "HTML CSS, JAVASCRIPT, REACTJS, NODEJS, EXPRESSJS, MONGODB, DAISYUI, VERCEL, FIREBASE",
+      "picture": "https://i.ibb.co/M5f7WGC/skill-plartform.png",
+      "name": "SKILL PLATFORM",
+      "liveLink": "https://assignment-10-2d6b2.web.app/"
+    },
+
+    {
+      "details": "Clients provides review oof any services",
+      "id":3,
+      "details2": "can see others reviews.",
+      "details3": "update his/her review.",
+      "details4": "Route name changes dynamically.",
+      "technology": "HTML, CSS, JAVASCRIPT,REACTJS, NODEJS, EXPRESSJS,MONGODB, DAISYUI, VERCEL, FIREBASE,JWT, REACT-PHOTO-VIEW.",
+      "picture": "https://i.ibb.co/ypm2Sck/wild-photography.png",
+      "name": "Wild-Photography",
+      "liveLink": "https://essignment-11.web.app/"
+    },
+    {
+      "details": "People can Resell There Products",
+      "id":4,
+      "details2": "Can Advertise Products.",
+      "details3": " Seller and Buyer Mode Dashboard",
+      "details4": "Admin role.",
+      "technology": "HTML, CSS, JAVASCRIPT,REACTJS, NODEJS, EXPRESSJS,MONGODB, DAISYUI, VERCEL, FIREBASE,JWT, REACT-PHOTO-VIEW.",
+      "picture": "https://i.ibb.co/F05P50y/car-resseler.png",
+      "name": "Car-Reseller",
+      "liveLink": "https://assignment-12-5f7d1.web.app/"
+    }
+  ]

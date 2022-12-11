@@ -1,9 +1,24 @@
 import React from "react";
 import { FaEnvelope, FaUser } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+import { toast } from "react-hot-toast";
+import Footer from "./Footer";
 
 const ContactForm = () => {
   const submitButton = (event) => {
     event.preventDefault();
+    const form=event.target;
+    emailjs.sendForm('service_65b0ovh', 'template_2brnj4b', form, 'jQErM8i8vfC5OQi9j')
+    .then((result) => {
+      
+            toast.success('successfully send Message')
+       
+    }, (error) => {
+        console.log(error.text);
+    });
+
+    
+    form.reset();
   };
 
   return (
@@ -63,18 +78,19 @@ const ContactForm = () => {
 
       <div
         className=""
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        data-aos="zoom-out-up"
+        
       >
-        <form className="flex-shrink-0 w-full  shadow-2xl bg-zinc-700 p-4 md:p-16 py-10">
+        <form onSubmit={submitButton} className="flex-shrink-0 w-full  shadow-2xl bg-zinc-700 p-4 md:p-16 py-10">
           <div class="flex my-12">
             <span class="inline-flex items-center  text-sm bg-zinc-900 border border-r-0 border-zinc-800 rounded-l-md text-gray-200 dark:border-gray-600 py-4 px-4">
               <FaUser></FaUser>
             </span>
             <input
               type="text"
+              name="name"
               id="website-admin"
+              required
               class="rounded-none rounded-r-lg focus:ring-0 focus:border-hidden text-white  block flex-1 min-w-0 w-full text-sm  p-2.5  bg-zinc-800 border-0 placeholder-gray-300"
               placeholder="Username"
             />
@@ -85,7 +101,9 @@ const ContactForm = () => {
               @
             </span>
             <input
+            name="email"
               type="email"
+              required
               id="website-admin"
               class="rounded-none rounded-r-lg focus:ring-0 focus:border-hidden  text-white  block flex-1 min-w-0 w-full text-sm  p-2.5  bg-zinc-800 border-0 placeholder-gray-300"
               placeholder="Email"
@@ -98,6 +116,8 @@ const ContactForm = () => {
             </span>
 
             <textarea
+            name="message"
+            required
               className="textarea  focus:ring-0 focus:border-hidden  rounded-none rounded-r-lg  text-white  block flex-1 min-w-0 w-full text-sm  p-2.5  bg-zinc-800  placeholder-gray-300"
               placeholder="Message"
             ></textarea>
@@ -114,6 +134,7 @@ const ContactForm = () => {
         </form>
 
       </div>
+     
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 
 import ContactForm from './ContactForm';
 import FirstSideNav from './FirstSideNav';
+import Footer from './Footer';
 
 
 const Content = () => {
@@ -20,6 +21,7 @@ const Content = () => {
             <ContactForm></ContactForm>
           </div>
         </div>
+        
         
       </div>
     );

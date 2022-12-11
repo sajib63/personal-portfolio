@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigation } from "react-router-dom";
+
 import FirstSideNav from "./FirstSideNav";
+
 import HomeBanner from "./HomeBanner";
 
 const Home = () => {
+ 
   return (
     <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
@@ -13,11 +17,12 @@ const Home = () => {
           <FirstSideNav></FirstSideNav>
         </div>
 
-        <div data-aos="fade-down" className=" lg:-ml-[300px]">
+        <div data-aos="fade-down" className=" lg:-ml-[250px]">
+         
           <HomeBanner></HomeBanner>
         </div>
       </div>
-      
+     
     </div>
   );
 };

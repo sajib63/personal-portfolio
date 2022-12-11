@@ -6,6 +6,7 @@ import { useTypewriter } from "react-simple-typewriter";
 
 import "./Banner.css";
 import CustomerSlide from "./CustomerSlide";
+import Footer from "./Footer";
 
 const HomeBanner = () => {
   const [text] = useTypewriter({
@@ -81,7 +82,7 @@ const HomeBanner = () => {
 
       {/* my services  */}
 
-      <section class="service my-4">
+      <section class="service mt-16">
         <div class="text-center">
           <h1 class="text-4xl font-bold " style={{ color: "#fcb900" }}>
             My services
@@ -333,6 +334,10 @@ const HomeBanner = () => {
 
           <CustomerSlide></CustomerSlide>
         </div>
+
+        <div className="bottom-0 bg-zinc-700">
+        <Footer></Footer>
+      </div>
 
         
     </div>
